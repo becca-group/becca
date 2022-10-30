@@ -40,4 +40,4 @@ WORKDIR /code
 # Setup entrypoint
 COPY entry.sh /entry.sh
 RUN sudo chmod +x /entry.sh
-ENTRYPOINT /entry.sh
+ENTRYPOINT [ "/entry.sh" ]
